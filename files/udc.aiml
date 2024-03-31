@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+
+  <category>
+    <pattern>hello</pattern>
+    <template>
+        <random>
+            <li>hello!</li>
+            <li>whats up?</li>
+            <li>hey there!</li>
+            <li>hiii!</li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>hi</pattern>
+      <template>hello there!</template>
+  </category>
+  
+  <category>
+    <pattern>hello *</pattern>
+    <template>hi there!</template>
+  </category>
+  
+  <category>
+      <pattern>my name is *</pattern>
+      <template>hi, <set name ="username"><star/></set></template>
+  </category>
+  
+  <category>
+    <pattern>can you tell me a joke</pattern>
+    <template>
+        <random>
+            <li>what do cows do for date night? they go to the mooooovies!</li>
+            <li>what do you call a pencil with two erasers? pointless!</li>
+            <li>what fruit do twins love? pears!</li>
+            <li>what is a bear with no teeth called? a gummy bear!</li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>what is the grading scale</pattern>
+      <template>A=93-100 A-=90-92 B+=87-89 B=83-86 B-=80-82 C+=77-79 C=73-79 C-=70-72 D+=67-69 D=63-66 D-=60-62 E= less than 60</template>
+  </category>
+  
+  <category>
+      <pattern>when is the last day of class</pattern>
+      <template>april 24th is the last day and you will take quiz 4</template>
+  </category>
+  
+ <category>
+     <pattern>where do I get the textbook</pattern>
+     <template>use this link to purchase:https://www.amazon.com/Introduction-Communication-Artificial-Intelligence/dp/1509533176</template>
+ </category>
+ 
+ <category>
+     <pattern>where do I contact the proffessors</pattern>
+     <template>the best way is by email. erbutler@ufl.edu and michael.harmon@ufl.edu</template>
+ </category>
+ 
+ <category>
+     <pattern>bye</pattern>
+     <template>bye <get name="username"/></template>
+ </category>
+</aiml>
